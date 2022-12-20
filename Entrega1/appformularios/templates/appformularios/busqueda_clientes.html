@@ -1,0 +1,15 @@
+{% extends 'appformularios/base.html' %}
+
+{% block contenido %}
+
+<form action="{% url 'entrega-clientes-buscar-resultados' %}" method="get">
+
+    <p>
+        Digite cedula: <input type="int" name="cedula">
+        <input type="submit" value="Buscar">
+    </p>
+
+
+</form>
+
+{% endblock %}

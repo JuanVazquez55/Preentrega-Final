@@ -1,0 +1,32 @@
+{% extends 'appformularios/base.html' %}
+
+{% block contenido %}
+
+<ul>
+    {% for sucursal in sucursales %}
+        <table>
+            <tr>
+                <th>Nombre de la dirección: </th><td>{{sucursal.nombre_direccion}}</td>
+            </tr>
+            <tr>
+                <th>Direccion: </th><td>{{sucursal.direccion}}</td>
+            </tr>
+            <tr>
+                <th>Departamento: </th><td>{{sucursal.departamento}}</td>
+            </tr>
+            <tr>
+                <th>Pais:</th><td>{{sucursal.pais}}</td>
+            </tr>
+            <tr>
+                <th>Codigo Postal:</th><td>{{sucursal.codigo_postal}}</td>
+            </tr>
+            <tr>
+                <th>-----------------------</th><th>--------------------------------------</th>
+            </tr>
+        </table>
+       
+    {% endfor %}
+
+</ul>
+
+{% endblock %}

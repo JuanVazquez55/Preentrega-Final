@@ -1,0 +1,15 @@
+{% extends 'appformularios/base.html' %}
+
+{% block contenido %}
+
+<form action="{% url 'entrega-sucursales-buscar-resultados' %}" method="get">
+
+    <p>
+        Nombre de la sucursal: <input type="text" name="nombre_direccion">
+        <input type="submit" value="Buscar">
+    </p>
+
+
+</form>
+
+{% endblock %}

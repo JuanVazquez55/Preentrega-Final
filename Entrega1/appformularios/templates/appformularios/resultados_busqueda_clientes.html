@@ -1,0 +1,29 @@
+{% extends 'appformularios/base.html' %}
+
+{% block contenido %}
+
+<ul>
+    {% for cliente in clientes %}
+        <table>
+            <tr>
+                <th>Nombre:</th><td>{{cliente.nombre}}</td>
+            </tr>
+            <tr>
+                <th>Cedula:</th><td>{{cliente.cedula}}</td>
+            </tr>
+            <tr>
+                <th>Email:</th><td>{{cliente.email}}</td>
+            </tr>
+            <tr>
+                <th>Sector:</th><td>{{cliente.sector}}</td>
+            </tr>
+            <tr>
+                <th>---------</th><th>--------------------------------------</th>
+            </tr>
+        </table>
+       
+    {% endfor %}
+
+</ul>
+
+{% endblock %}

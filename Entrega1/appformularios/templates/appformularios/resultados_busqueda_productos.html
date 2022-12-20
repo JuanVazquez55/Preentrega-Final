@@ -1,0 +1,26 @@
+{% extends 'appformularios/base.html' %}
+
+{% block contenido %}
+
+<ul>
+    {% for producto in productos %}
+        <table>
+            <tr>
+                <th>Nombre:</th><td>{{producto.nombre_producto}}</td>
+            </tr>
+            <tr>
+                <th>Descripcion:</th><td>{{producto.descripcion}}</td>
+            </tr>
+            <tr>
+                <th>Id producto:</th><td>{{producto.id_producto}}</td>
+            </tr>
+            <tr>
+                <th>-----------------------</th><th>--------------------------------------</th>
+            </tr>
+        </table>
+       
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
